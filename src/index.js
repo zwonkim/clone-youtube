@@ -8,6 +8,7 @@ import { RouterProvider } from "react-router-dom";
 import ErrorPage from "./pages/ErrorPage";
 import Videos from "./pages/Videos";
 import VideoDetail from "./pages/VideoDetail";
+import app from "./firebase";
 
 const router = createBrowserRouter([
   {
