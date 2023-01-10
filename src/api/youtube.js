@@ -4,7 +4,7 @@ export default class Youtube {
   }
 
   async search(keyword) {
-    return keyword ? this.#searchByKeyword(keyword) : this.#mostPopular();
+    return keyword ? this.searchByKeyword(keyword) : this.mostPopular();
   }
 
   async channelImageURL(id) {
@@ -28,7 +28,7 @@ export default class Youtube {
       );
   }
 
-  async #searchByKeyword(keyword) {
+  async searchByKeyword(keyword) {
     return this.apiClient
       .search({
         params: {
@@ -43,7 +43,7 @@ export default class Youtube {
       );
   }
 
-  async #mostPopular() {
+  async mostPopular() {
     return this.apiClient
       .videos({
         params: {
