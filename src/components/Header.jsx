@@ -48,7 +48,7 @@ const Header = () => {
         <input type="text" placeholder='검색' value={text} onChange={(event)=> {setText(event.target.value)}}className='w-7/12 pl-4 outline-none'/>
         <button className='bg-zinc-200 pr-3 pl-3 rounded-r-3xl'><AiOutlineSearch/></button>
       </form>
-      {/* {
+      {
         userData && 
         <div>
           <img src={userData.photoURL} alt='user profile' className='rounded-full w-9 shrink-0'/>
@@ -59,7 +59,7 @@ const Header = () => {
       }
       {userData && 
        <AuthenticationBtn handleClick = {handleLogOut} text={'로그아웃'}/>
-      } */}
+      }
     </nav>
   )
 }
